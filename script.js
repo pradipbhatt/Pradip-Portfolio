@@ -85,3 +85,7 @@ function toggleSection(button) {
       addButton.style.display = 'none';
   }
 }
+
+
+// Swiper JS
+
