@@ -1,0 +1,3 @@
+# Pradip-Portfolio
+This is the second portfolio having light theme...
+go through this link https://parry01.netlify.app/
