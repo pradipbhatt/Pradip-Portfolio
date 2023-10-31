@@ -144,5 +144,6 @@ const slider = document.querySelector('.slider');
     });
 
 
+
     // Swiper JS
      
