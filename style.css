@@ -907,3 +907,111 @@ h2 img{
 }
 
 /* Trying to add sliding crauser effect */
+/* Carousel container */
+#carouselExampleCaptions {
+  position: relative;
+}
+
+/* Carousel indicators */
+.carousel-indicators button {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background-color: #ccc;
+  border: none;
+  border-radius: 50%;
+  opacity: 0.5;
+  transition: background-color 0.3s;
+}
+
+.carousel-indicators button.active {
+  background-color: #007bff;
+  opacity: 1;
+}
+
+/* Carousel items */
+.carousel-item {
+  position: relative;
+  text-align: center;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+}
+
+/* Carousel captions */
+.carousel-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 10px;
+}
+
+.carousel-caption h5 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.carousel-caption p {
+  font-size: 18px;
+  margin: 0;
+}
+
+/* Carousel control buttons */
+.carousel-control-prev, .carousel-control-next {
+  background-color: rgba(0, 0, 0, 0.6);
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+.carousel-control-prev span, .carousel-control-next span {
+  color: #fff;
+  font-size: 20px;
+}
+
+.carousel-control-prev:hover, .carousel-control-next:hover {
+  background-color: #333;
+}
+.about-vlog{
+     /* border: 3px solid rgb(255, 17, 0); */
+     width: 55%;
+     float: left;
+     height: 600px;
+     margin-left: 300px;
+     margin-right: 70px;
+     margin-top: 100px;
+     float: left;
+     padding-left: 30px;
+     margin-top: 0px;
+     margin-bottom: 0px;
+     /* background-color: #ffffff; */
+     /* background-color: #ffffff; */
+     /* box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);  */
+     align-items: center;
+}
+.vlog-left{
+  /* background-color:#007bff ; */
+  width: 40%;
+  float: left;
+  height: 500px;
+  margin-left: 0px;
+  margin-right: 20px;
+  margin-top: 30px;
+  float: left;
+  padding-left: 30px;
+  color: #604272d3;
+  box-sizing:content-box;
+  background-color: white;
+  font-family: Amaranth, sans-serif;
+
+}

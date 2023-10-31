@@ -142,3 +142,7 @@ const slider = document.querySelector('.slider');
             goToSlide(currentSlide + 1);
         }
     });
+
+
+    // Swiper JS
+     
