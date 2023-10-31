@@ -89,3 +89,56 @@ function toggleSection(button) {
 
 // Swiper JS
 
+const slider = document.querySelector('.slider');
+    const sliderItems = document.querySelectorAll('.slider-item');
+    const pagination = document.querySelector('.slider-pagination');
+    const prevButton = document.querySelector('.prev');
+    const nextButton = document.querySelector('.next');
+
+    let currentSlide = 0;
+
+    // Create pagination buttons
+    for (let i = 0; i < sliderItems.length; i++) {
+        const button = document.createElement('button');
+        button.addEventListener('click', () => goToSlide(i));
+        pagination.appendChild(button);
+    }
+
+    function goToSlide(slideIndex) {
+        currentSlide = slideIndex;
+
+        // Hide all slides except the active one
+        sliderItems.forEach((item, index) => {
+            if (index === slideIndex) {
+                item.classList.add('active');
+            } else {
+                item.classList.remove('active');
+            }
+        });
+
+        // Update active class for pagination buttons
+        const paginationButtons = pagination.querySelectorAll('button');
+        paginationButtons.forEach((button, index) => {
+            if (index === slideIndex) {
+                button.classList.add('active');
+            } else {
+                button.classList.remove('active');
+            }
+        });
+    }
+
+    // Initialize the first slide
+    goToSlide(currentSlide);
+
+    // Add event listeners for arrow navigation
+    prevButton.addEventListener('click', () => {
+        if (currentSlide > 0) {
+            goToSlide(currentSlide - 1);
+        }
+    });
+
+    nextButton.addEventListener('click', () => {
+        if (currentSlide < sliderItems.length - 1) {
+            goToSlide(currentSlide + 1);
+        }
+    });

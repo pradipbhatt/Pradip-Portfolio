@@ -293,10 +293,10 @@ h2 img{
 }
 .aboutme{
     /* border: 3px solid rgb(255, 17, 0); */
-    width: 80%;
+    width: 55%;
     float: left;
     height: 600px;
-    margin-left: 100px;
+    margin-left: 300px;
     margin-right: 70px;
     margin-top: 100px;
     float: left;
@@ -304,7 +304,7 @@ h2 img{
     margin-top: 0px;
     margin-bottom: 0px;
     /* background-color: #ffffff; */
-    background-color: #ffffffb6;
+    /* background-color: #ffffff; */
     /* box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);  */
     align-items: center;
 }
@@ -318,10 +318,10 @@ h2 img{
   /* background-color: #8A2BE2; */
       /* border: 3px solid rgb(255, 17, 0); */
       /* background-color: #ffffff41; */
-      width: 55%;
+      width: 65%;
       float: left;
       height: 400px;
-      margin-right: 190px;
+      margin-right: 200px;
       float: left;
       padding: 30px;
       margin-top: 10px;
@@ -345,12 +345,14 @@ h2 img{
 
 .about-journey a h2{
   /* background-color: rgb(43, 226, 67); */
-  /* background-color: #ffffff41; */
-  font-size: 20px;
+  background-color: #ffffff41;
+  font-size: 17px;
   height: 70px;
   /* border: 4px solid green; */
   font-weight: 200;
   box-shadow: 4px 3px 3px  #ffffff;
+  margin-left: 40px;
+  margin-right: -65px;
 }
   .section a h3{
     border: 5px solid yellowgreen;
@@ -373,8 +375,8 @@ h2 img{
   font-weight: 200;
 }
 .box{
- /* border: 3px solid rgb(255, 17, 0); */
- width: 40%;
+ /* border: 3px solid rgb(0, 247, 255); */
+ width: 30%;
  float: left;
  height: auto;
  margin-left: 40px;
@@ -386,7 +388,7 @@ h2 img{
  /* box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);   */
 }
 .about{
-    /* border: 3px solid rgb(255, 17, 0); */
+    /* border: 3px solid rgb(255, 196, 0); */
     width: 40%;
     float: left;
     height: auto;
@@ -425,7 +427,7 @@ h2 img{
     width: 40%;
     height: 40%;
     background: rgba(255, 255, 255, 0.2);
-    border: 1px solid #ccc;
+    /* border: 1px solid #ccc; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -568,8 +570,8 @@ h2 img{
   font-weight: 550;
 }
 .option{
-  /* border: 5px solid rgb(223, 178, 32); */
-  margin: 0px 280px;
+  /* border: 5px solid rgb(164, 7, 255); */
+  margin: 0px 120px;
   height: 100px;
   overflow: hidden;
   /* background-color: yellowgreen; */
@@ -686,8 +688,9 @@ h2 img{
   height: 100%;
   overflow: hidden;
   /* background-color: #ffffff; */
-  background-color: #ffffff41;
-  /* box-shadow: 0px 1px 10px 0px #8A2BE2; */
+  background-color: #ffffff;
+  /* box-shadow: 0px 1px 1px 0px #8A2BE2; */
+  margin: 10px 20px;
 }
 
 .action-buttons {
@@ -722,9 +725,9 @@ h2 img{
   /* margin: 0px 100px; */
   border-radius: 10px 10px;
   padding: 20px 10px;
-  background-color: #ffffff38;
-  /* border: 5px solid rgb(0, 124, 128); */
-  width: 100%;
+  background-color: #ffffff;
+  /* border: 5px solid rgb(39, 248, 255); */
+  width: 96%;
 
 }
 
@@ -735,21 +738,21 @@ h2 img{
   margin: 5px 20px;
   float: left;
   overflow: hidden;
-  background-color: #ffffffe7;
+  /* background-color: #ffffffe7; */
 }
 
 .slider-img{
   /* border: 5px solid rgb(51, 128, 0); */
   height: 400px;
   width: 90%;
-  margin: 5px 20px;
+  margin: 5px 10px;
   float: left;
 }
 .slider-img img{
   height: 350px;
-  width: 40%;
+  width: 50%;
   border-radius: 10px 10px;
-  /* box-shadow: 0px 1px 10px 0px #8A2BE2; */
+  box-shadow: 0px 1px 1px 0px #8A2BE2;
   margin: 10px 250px;
 }
 .slider-para h3{
@@ -766,17 +769,19 @@ h2 img{
   border-radius: 5px;
   /* background-color: #f0f0f0; */
   /* box-shadow: 0px 3px 20px 5px rgba(0, 0, 0, 0.2);  */
-  /* border: 5px solid green; */
-  width: 40%;
-  font-size: 25px;
+  /* border: 5px solid rgb(173, 255, 20); */
+  width: 45%;
+  font-size: 17px;
   font-weight: 300;
 }
 .slider-img img{
   height: 350px;
-  width: 40%;
+  width: 80%;
   border-radius: 10px 10px;
   /* box-shadow: 0px 1px 10px 0px #8A2BE2; */
   margin: 10px 250px;
+  /* border: 5px solid green; */
+  margin-left: 70px;
 }
 .slider-para h2{
   float: left;
@@ -792,27 +797,113 @@ h2 img{
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   border-radius: 5px;
-  /* border: 5px solid green; */
+  /* border: 5px solid rgb(41, 207, 41); */
   width: 17%;
-  font-size: 14px;
-  margin: 0px 10px;
-  background-color: rgba(228, 203, 252, 0.507);
+  height: 55px;
+  margin-left: 10px;
+  font-size: 13px;
+  margin: 0px 6px;
+  /* background-color: rgba(228, 203, 252, 0.507); */
   box-sizing: border-box;
   box-shadow: 2px 1px 2px 0px #8A2BE2;
 }
 .about-para{
       /* border: 3px solid rgb(255, 17, 0); */
-      width: 80%;
+      width: 70%;
       /* float: left; */
       height: auto;
       margin-left: 40px;
       float: left;
-      padding: 30px;
-      margin-top: 10px;
-      margin-bottom: 0px;
-      /* background-color: #f0f0f0; */
+      padding: 20px;
+      margin-top: 5px;
+      margin-bottom: -10px;
+      background-color: #ffffff;
       /* box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);  */
       font-family: Amaranth, sans-serif;
       word-spacing: 10px;
       color: #260261;
+      margin-right: 50px;
   }
+
+
+  .slider-container {
+    position: relative;
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+}
+
+.slider-item {
+    flex: 0 0 100%;
+    display: none; /* Initially hide all slides */
+}
+
+.slider-item.active {
+    display: block; /* Display the active slide */
+}
+
+/* Pagination Styles */
+.slider-pagination {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.slider-pagination button {
+    background-color: #ccc;
+    border: none;
+    border-radius: 50%;
+    width: 17px;
+    height: 17px;
+    margin: 0 4px;
+    cursor: pointer;
+}
+
+.slider-pagination button.active {
+    background-color: #6500c4c2;
+}
+
+.slider-controls{
+  /* border: 5px solid pink; */
+  width: 100%;
+  height: 100px;
+  /* margin: -60px 100px; */
+  background-color: #ffffff;
+  /* box-shadow: 0px 1px 10px 0px #8A2BE2; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  z-index: 0; /* Set a higher z-index to make the content appear above the fixed navbar */
+  background-color: #ffffff41;
+}
+.slider-controls button{
+  border: 0px solid pink;
+  width: 14%;
+  height: 30px;
+  /* margin: -60px 100px; */
+  background-color: #ffffff;
+  /* box-shadow: 0px 1px 10px 0px #8A2BE2; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  z-index: 0; /* Set a higher z-index to make the content appear above the fixed navbar */
+  background-color: #f2e2ff88;
+  margin-top: -760px;
+  margin-right: 240px;
+  margin-left: 240px;
+}
+.slider-controls button h1{
+  background-color: #f2e2ff88;
+  color: #8A2BE2;
+  font-size: 50px;
+  font-weight: 400;
+  background-color: #ffffff05;
+}
+
+/* Trying to add sliding crauser effect */
