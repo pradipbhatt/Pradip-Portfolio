@@ -8,21 +8,6 @@ navbarToggle.addEventListener('click', () => {
 });
 
 
-const cuboid = document.getElementById('cuboid');
-
-let rotationX = 0;
-let rotationY = 0;
-
-function rotateCuboid() {
-  rotationX += 1; // Adjust the rotation speed as needed
-  rotationY += 1; // Adjust the rotation speed as needed
-  cuboid.style.transform = `rotateX(${rotationX}deg) rotateY(${rotationY}deg)`;
-}
-
-setInterval(rotateCuboid, 50); // Adjust the interval for rotation speed
-
-
-
 
 // Get references to buttons and content divs
 const educationBtn = document.getElementById("educationBtn");
