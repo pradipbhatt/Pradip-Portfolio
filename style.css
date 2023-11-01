@@ -62,26 +62,66 @@ body {
   height: 1px;
 }
 
-/* Desktop and laptop styles */
-@media (min-width: 760px) {
-  .navbar-toggle {
-    display: none; /* Hide the toggle bar on larger screens */
-  }
-}
 
-/* Toggle bar styles for screens less than 789px */
-@media (max-width: 789px) {
+
+/* Media queries */
+
+@media screen and (min-width: 376px) and (max-width:500px) {
+  .navbar {
+    display: flex;
+    /* background-color: #dbc7e9; */
+    width: 95%;
+    top: 0px;
+    /* border: 5px solid rgb(0, 217, 255); */
+    margin-left: 500px;
+    float: right;
+    font-size: 20px;
+}
+}
+@media screen and (min-width: 477px) and (max-width: 992px) {
+  /* Your CSS rules for medium screens here */
   .navbar {
     display: none;
     flex-direction: column;
     position: absolute;
-    background-color: #f0f0f0;
-    width: 100%;
-    bottom: -100%; /* Initially hide the navbar off-screen */
-    left: 0;
-    right: 0;
-    z-index: 1;
+    background-color: #8204cb00;
+    width: 95%;
+    /* Initially hide the navbar off-screen */
+    top: 0px;
+    /* border: 5px solid rgb(0, 217, 255); */
+    margin-left: 285px;
+    height: 300px;
+}
+
+ .bar{
+  /* border: 5px solid green; */
+ width:30%;
+}
+
+.navbar a{
+  border: 5px solid rgba(255, 0, 0, 0.001);
+
+}
+
+/* Styles for large screens (between 993px and 1200px wide) */
+@media screen and (min-width: 893px) and (max-width: 1200px) {
+  .navbar {
+    display: none;
+    /* background-color: #dbc7e9; */
+    width: 95%;
+    top: 0px;
+    /* border: 5px solid rgb(0, 217, 255); */
+    margin-left: 230px;
+    float: right;
+}
+}
+
+/* Desktop and laptop styles */
+@media (min-width: 300px) {
+  .navbar-toggle {
+    display: none; 
   }
+}
 
   .navbar.active {
     display: flex;
