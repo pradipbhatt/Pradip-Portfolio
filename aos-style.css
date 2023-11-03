@@ -1,0 +1,10 @@
+.container{
+    border: 5px solid red;
+    padding: 10px 30px;
+}
+
+.section{
+    border: 5px solid green;
+    padding: 10px 30px;
+    margin: 100px 60px;
+}

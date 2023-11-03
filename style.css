@@ -1054,7 +1054,7 @@ img {
   font-weight: 550;
 }
 .option {
-  border: 0px solid rgb(164, 7, 255);
+  border: 0px solid rgb(21, 1, 33);
   margin: 0px 120px;
   height: 100px;
   /* overflow: scroll; */
@@ -1067,6 +1067,7 @@ img {
   justify-content: space-around; /* Adjust this based on your desired spacing */
   align-items: center; /* Align the buttons vertically in the center */
   position:relative;
+  text-decoration: none;
 }
 
 #educationBtn,
@@ -1174,6 +1175,7 @@ img {
   background-color: #ffffff;
   /* box-shadow: 0px 1px 1px 0px #8A2BE2; */
   margin: 10px 20px;
+  padding-left: 20px;
 }
 
 .action-buttons {
@@ -1314,16 +1316,17 @@ img {
   height: auto;
   margin-left: 40px;
   float: left;
-  padding: 20px;
+  padding: 4.1rem 0px;
   margin-top: 0px;
   margin-bottom: -45px;
-  background-color: #ffffff;
+  background-color: #ffffff03;
   /* box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);  */
   font-family: Amaranth, sans-serif;
   word-spacing: 10px;
   color: #260261;
   margin-right: 0px;
   box-sizing: border-box;
+  font-size: 1.2rem;
 }
 
 .slider-container {
