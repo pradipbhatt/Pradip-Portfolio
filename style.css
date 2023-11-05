@@ -418,7 +418,7 @@ h2 img {
 @media screen and (min-width: 100px) and (max-width:760px) {
   .main {
     width: 100%;
-    margin: 1rem;
+    margin: 0rem;
     min-height: 25rem;
     padding: 30px;
     display: flex;
@@ -462,13 +462,7 @@ h2 img {
     font-size: 2rem;
   }
 
-   p{
-    margin-left:-150px;
-    margin-bottom: 50px;
-    width: 100%;
-    height: 60px;
-    /* border: 10px solid rgb(255, 0, 0); */
-  }
+
    .slidebar-button{
     border: 2px solid rgb(1, 23, 1);
     height: 2.5rem;
@@ -478,7 +472,7 @@ h2 img {
     width: 10rem;
     background-color: white;
     margin-left: 0rem;
-    margin-top: 0rem;
+    margin-top: 3.5rem;
    }
 
    .slidebar-button img{
@@ -495,33 +489,47 @@ h2 img {
     /* border: 3px solid rgb(0, 255, 0); */
     width: 100%;
     /* float: left; */
-    height: 20rem;
+    height: 10rem;
     margin-right: 0rem;
-    margin-top:-4rem;
+    margin-top:12rem;
     margin-left: 2.2rem;
     /* border: 5px solid rgb(0, 68, 255); */
     box-sizing: border-box;
+    font-size: 10px;
    }
+.sidebar1 h1{
+  font-size: 2rem;
+  /* border: 4px solid red; */
+  height: 5rem;
+  font-weight: 100;
+  width: 200px;
+}
+
    .home__subtitle{
     font-size: 1.2rem;
     font-weight: 500;
     padding-left: 0rem;
     /* position: relative; */
     color: hsl(0, 0%, 46%);
-    font-size: 20px;
-    margin-top: 0.1rem;
+    font-size: 17px;
+    margin-top: 1rem;
     margin-left: 0rem;
     margin-bottom: 0rem;
     /* border: 5px solid rgb(0, 255, 0); */
+    width: 100%;
    }
 
    .sidebar2 {
-    /* border: 3px solid rgb(0, 255, 0); */
+    /* border: 3px solid rgb(9, 255, 0); */
+    width: 60%;
+    float: left;
+    height: 10rem;
+    margin-right: 0rem;
+    margin-top: -10rem;
+    margin-left: -15rem;
     /* border: 5px solid rgb(0, 68, 255); */
     box-sizing: border-box;
-    height: 15rem;
-    width: 9rem;
-    margin-top: -1rem;
+    font-size: 10px;
    }
 }
 
