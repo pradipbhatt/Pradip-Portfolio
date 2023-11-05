@@ -24,7 +24,7 @@ body {
     box-sizing: border-box;
 }
 
-@media screen and (min-width: 400px) and (max-width:768px){
+@media screen and (min-width: 100px) and (max-width:768px){
   .container {
     flex: 1 auto;
     display: flex;
@@ -32,7 +32,7 @@ body {
     justify-content: center;
     text-align: center;
     width: 100%;
-    /* border: 10px solid rgb(47, 255, 0); */
+    /* border: 10px solid rgb(47, 255, 0);*/
     box-sizing: border-box;
     margin-left: 0px;
     margin-right: 0px;
@@ -97,7 +97,7 @@ body {
 
 /* Media queries */
 
-@media screen and (min-width: 276px) and (max-width:500px) {
+@media screen and (min-width: 100px) and (max-width:500px) {
   .navbar {
     display: none;
     flex-direction: column;
@@ -106,12 +106,12 @@ body {
     width: 95%;
     /* Initially hide the navbar off-screen */
     top: 0px;
-    border: 5px solid rgb(195, 255, 0);
+    /* border: 5px solid rgb(195, 255, 0); */
     margin-left: 285px;
     height: 300px;
 }
 }
-@media screen and (min-width: 500px) and (max-width: 992px) {
+@media screen and (min-width: 100px) and (max-width: 992px) {
   /* Your CSS rules for medium screens here */
   .navbar {
     display: none;
@@ -134,22 +134,22 @@ body {
 }
 
 .navbar a{
-  border: 5px solid rgba(255, 0, 0, 0.001);
+  border: 5px solid rgba(164, 156, 156, 0.001);
 
 }
 
 /* Styles for large screens (between 993px and 1200px wide) */
-@media screen and (min-width: 893px) and (max-width: 1200px) {
+/* @media screen and (min-width: 893px) and (max-width: 1200px) {
   .navbar {
     display: none;
     background-color: #63119d;
     width: 95%;
     top: 0px;
     /* border: 5px solid rgb(0, 217, 255); */
-    margin-left: 230px;
+    /* margin-left: 230px;
     float: right;
 }
-}
+} */ 
 
 
   .navbar.active {
@@ -185,7 +185,7 @@ body {
   .bar {
     width: 50px;
     height: 8px;
-    background-color: #c87979;
+    background-color: #2b050567;
     margin: 6px 0;
     transition: 0.5s;
   }
@@ -285,10 +285,11 @@ body {
 
 
 .name {
-  /* border: 3px solid rgb(208, 0, 255); */
+  border: 3px solid rgb(208, 0, 255);
   float: left;
   color: #8500dd;
   /* background-color: azure; */
+  /* margin-left: 9.5rem; */
 }
 span {
   font-family: Amaranth, sans-serif;
@@ -414,9 +415,9 @@ h2 img {
 /* Media queries */
 
 /* Mobile phones (max-width: 480px) */
-@media screen and (min-width: 300px) and (max-width:760px) {
+@media screen and (min-width: 100px) and (max-width:760px) {
   .main {
-    width: 35rem;
+    width: 100%;
     margin: 1rem;
     min-height: 25rem;
     padding: 30px;
@@ -425,6 +426,7 @@ h2 img {
     /* border: 10px solid yellow; */
     margin-left: -1rem;
     box-sizing: border-box;
+    overflow: hidden;
   }
   .sidebar {
     width: 10%;
@@ -457,20 +459,74 @@ h2 img {
   }
 
   span {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
-  h2 {
-    margin-left:10px;
-    width: 50%;
-    height: 30px;
+   p{
+    margin-left:-150px;
+    margin-bottom: 50px;
+    width: 100%;
+    height: 60px;
     /* border: 10px solid rgb(255, 0, 0); */
   }
+   .slidebar-button{
+    border: 2px solid rgb(1, 23, 1);
+    height: 2.5rem;
+    font-size: 1.2rem;
+    padding: .6rem ;
+    font-weight: 500;
+    width: 10rem;
+    background-color: white;
+    margin-left: 0rem;
+    margin-top: 0rem;
+   }
 
+   .slidebar-button img{
+    /* border: 2px solid rgb(1, 23, 1); */
+    height: 2rem;
+    font-size: 1.2rem;
+    padding: .5rem .6rem 2rem .6rem;
+    font-weight: 500;
+    margin: 0rem 0rem 0rem 7rem;
+    margin-top: -1.9rem;
+    
+   }
+   .sidebar1{
+    /* border: 3px solid rgb(0, 255, 0); */
+    width: 100%;
+    /* float: left; */
+    height: 20rem;
+    margin-right: 0rem;
+    margin-top:-4rem;
+    margin-left: 2.2rem;
+    /* border: 5px solid rgb(0, 68, 255); */
+    box-sizing: border-box;
+   }
+   .home__subtitle{
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding-left: 0rem;
+    /* position: relative; */
+    color: hsl(0, 0%, 46%);
+    font-size: 20px;
+    margin-top: 0.1rem;
+    margin-left: 0rem;
+    margin-bottom: 0rem;
+    /* border: 5px solid rgb(0, 255, 0); */
+   }
+
+   .sidebar2 {
+    /* border: 3px solid rgb(0, 255, 0); */
+    /* border: 5px solid rgb(0, 68, 255); */
+    box-sizing: border-box;
+    height: 15rem;
+    width: 9rem;
+    margin-top: -1rem;
+   }
 }
 
 /* Laptops (min-width: 769px) */
-@media screen and (min-width: 769px) and (max-width:1000px) {
+/* @media screen and (min-width: 769px) and (max-width:1000px) {
   .main {
     width: 50%;
     margin: 50px 400px;
@@ -518,7 +574,7 @@ h2 img {
     width: 30%;
     height: 30px;
   }
-}
+} */
 
 
 
