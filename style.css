@@ -12,7 +12,33 @@ body {
   /* border: 10px solid red; */
 }
 
+/* Basic styles for the container and cuboid */
+.container {
+  flex: 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    /* border: 10px solid red; */
+    box-sizing: border-box;
+}
 
+@media screen and (min-width: 400px) and (max-width:768px){
+  .container {
+    flex: 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    /* border: 10px solid rgb(47, 255, 0); */
+    box-sizing: border-box;
+    margin-left: 0px;
+    margin-right: 0px;
+    overflow: hidden;
+  }
+}
 
 
 .navbar {
@@ -76,11 +102,11 @@ body {
     display: none;
     flex-direction: column;
     position: absolute;
-    background-color: #8204cb00;
+    background-color: #8204cbfd;
     width: 95%;
     /* Initially hide the navbar off-screen */
     top: 0px;
-    border: 5px solid rgb(0, 217, 255);
+    border: 5px solid rgb(195, 255, 0);
     margin-left: 285px;
     height: 300px;
 }
@@ -91,13 +117,15 @@ body {
     display: none;
     flex-direction: column;
     position: absolute;
-    background-color: #8204cb00;
+    background-color: #e7e7e798;
     width: 95%;
     /* Initially hide the navbar off-screen */
     top: 0px;
-    border: 5px solid rgb(0, 217, 255);
-    margin-left: 285px;
+    /* border: 5px solid rgb(255, 196, 0); */
+    margin-left: -60px;
+    margin-right: 20px;
     height: 300px;
+    overflow: hidden;
 }
 
  .bar{
@@ -114,7 +142,7 @@ body {
 @media screen and (min-width: 893px) and (max-width: 1200px) {
   .navbar {
     display: none;
-    /* background-color: #dbc7e9; */
+    background-color: #63119d;
     width: 95%;
     top: 0px;
     /* border: 5px solid rgb(0, 217, 255); */
@@ -123,12 +151,6 @@ body {
 }
 }
 
-/* Desktop and laptop styles */
-@media (min-width: 300px) {
-  .navbar-toggle {
-    display: none; 
-  }
-}
 
   .navbar.active {
     display: flex;
@@ -395,34 +417,39 @@ h2 img {
 @media screen and (min-width: 300px) and (max-width:760px) {
   .main {
     width: 35rem;
-    margin: 50px 440px;
-    min-height: 300px;
+    margin: 1rem;
+    min-height: 25rem;
     padding: 30px;
     display: flex;
-    background-color: #6000b9cc;
+    background-color: #6000b900;
     /* border: 10px solid yellow; */
-    margin-left: 500px;
+    margin-left: -1rem;
+    box-sizing: border-box;
   }
   .sidebar {
     width: 10%;
     max-width: fit-content;
     float: left;
-    margin-left: 20px;
+    margin-left: 0px;
     padding: 0px;
-    margin-top: -50px;
+    margin-top: -2.5rem;
+    /* background-color: aqua; */
     
   }
 
   .sidebar a img {
-    width: 70%;
-    height: 70%;
-    /* border: 10px solid yellow; */
+    width: 1.2rem;
+    height:1rem;
+    /* box-sizing: border-box; */
+    /* border: 1px solid rgba(0, 255, 98, 0.198); */
   }
 
-  .sidebar2 img {
-    height: 150px;
-    width: 150px;
-    /* border: 10px solid yellow; */
+  .sidebar2 img 
+  {
+    margin-right: 25rem;
+    height: 9rem;
+    width:26rem;
+    /* border: 1px solid yellow; */
   }
 
   .name {
@@ -430,14 +457,14 @@ h2 img {
   }
 
   span {
-    font-size: 30px;
+    font-size: 1.8rem;
   }
 
   h2 {
     margin-left:10px;
     width: 50%;
     height: 30px;
-    /* border: 10px solid yellow; */
+    /* border: 10px solid rgb(255, 0, 0); */
   }
 
 }
@@ -911,69 +938,7 @@ h2 img {
 
 /* Here i added the css of rectangular box */
 
-/* Basic styles for the container and cuboid */
-.container {
-  perspective: 800px;
-  width: 200px; /* Adjust the size as needed */
-  height: 200px; /* Adjust the size as needed */
-  margin: 50px auto; /* Adjust positioning as needed */
-}
 
-.cuboid {
-  width: 50%;
-  height: 50%;
-  /* position: relative; */
-  transform-style: preserve-3d;
-  animation: rotate 10s infinite linear;
-  transform: rotateX(45deg) rotateY(90deg); /* Start at an angle */
-}
-
-.face {
-  position: absolute;
-  width: 40%;
-  height: 40%;
-  background: rgba(255, 255, 255, 0.2);
-  /* border: 1px solid #ccc; */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transform-style: preserve-3d;
-  backface-visibility: hidden;
-}
-
-.front {
-  transform: translateZ(100px);
-}
-
-.back {
-  transform: rotateY(180deg) translateZ(100px);
-}
-
-.left {
-  transform: rotateY(-90deg) translateZ(100px);
-}
-
-.right {
-  transform: rotateY(90deg) translateZ(100px);
-}
-
-.top {
-  transform: rotateX(90deg) translateZ(100px);
-}
-
-.bottom {
-  transform: rotateX(-90deg) translateZ(100px);
-}
-
-.left-back {
-  transform: rotateY(-135deg) translateX(100px) translateY(100px)
-    translateZ(100px);
-}
-
-.right-back {
-  transform: rotateY(135deg) translateX(-100px) translateY(100px)
-    translateZ(100px);
-}
 
 /* Define animations for cuboid rotation */
 @keyframes rotate {
