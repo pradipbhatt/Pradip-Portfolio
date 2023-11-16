@@ -1719,7 +1719,7 @@ img {
     }
     
     .slider-controls {
-      border: 5px solid rgb(47, 203, 255);
+      /* border: 5px solid rgb(47, 203, 255); */
       width: 80%;
       height: 10px;
       /* margin: -60px 100px; */
