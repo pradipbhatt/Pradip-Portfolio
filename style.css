@@ -32,7 +32,7 @@ body {
     justify-content: center;
     text-align: center;
     width: 100%;
-    /* border: 10px solid rgb(47, 255, 0);*/
+    /* border: 10px solid rgb(47, 255, 0); */
     box-sizing: border-box;
     margin-left: 0px;
     margin-right: 0px;
@@ -43,14 +43,14 @@ body {
 
 .navbar {
   /* background-color: transparent; */
-  display: flex;
+  display:flex;
   justify-content: center;
   /* border: 4px solid rgb(47, 128, 0); */
   border-radius: 5px;
   margin-top: 0px;
-  padding: 0px;
+  padding: 10px;
   width: 100%;
-  margin-top: -20px;
+  margin-top: 0px;
   position: fixed;
   background-color: #fffffffe;
 }
@@ -97,37 +97,32 @@ body {
 
 /* Media queries */
 
-@media screen and (min-width: 100px) and (max-width:500px) {
-  .navbar {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    background-color: #8204cbfd;
-    width: 95%;
-    /* Initially hide the navbar off-screen */
-    top: 0px;
-    /* border: 5px solid rgb(195, 255, 0); */
-    margin-left: 285px;
-    height: 300px;
-}
-}
 @media screen and (min-width: 100px) and (max-width: 992px) {
   /* Your CSS rules for medium screens here */
   .navbar {
     display: none;
     flex-direction: column;
-    position: absolute;
+    position: fixed;
     background-color: #ffffff;
-    width: 95%;
+    width: 110%;
     /* Initially hide the navbar off-screen */
-    top: 0px;
+    top: 40px;
     /* border: 5px solid rgb(255, 196, 0); */
     margin-left: -60px;
     margin-right: 20px;
-    height: 300px;
+    height: 600px;
     overflow: hidden;
 }
 
+.navbar-toggle {
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  cursor: pointer;
+  transition: 2s;
+  /* border: 5px solid red; */
+}
  .bar{
   /* border: 5px solid green; */
  width:30%;
@@ -159,7 +154,7 @@ body {
 
   .navbar a {
     margin: 0;
-    padding: 10px 0;
+    padding: 15px 0;
     border-bottom: 1px solid rgba(37, 34, 34, 0.637);
   }
 
@@ -173,14 +168,6 @@ body {
     padding: 10px 20px;
   }
 
-  .navbar-toggle {
-    display: block;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    cursor: pointer;
-    transition: 0.5s;
-  }
 
   .bar {
     width: 30px;
@@ -2387,16 +2374,16 @@ html {
   }
   .about-img {
     /* border: 5px solid red; */
-    width: 90%;
+    width: 100%;
     float: left;
-    height: 150px;
+    height: 250px;
     float: left;
     margin-left: -20px;
     margin-top: 2px;
     margin-bottom: -100px;
     /* background-color: #ffffff; */
     /* background-color: #ffffff; */
-    box-shadow: 1px 1px 4px 2px rgb(77, 0, 149);
+    /* box-shadow: 1px 1px 4px 2px rgb(77, 0, 149); */
     align-items: center;
   }
   
