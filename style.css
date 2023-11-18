@@ -600,7 +600,7 @@ h2 img {
   height: 25rem;
   float: left;
   padding: 30px 20px;
-  margin-top: 2.5rem;
+  margin-top: .5rem;
   margin-bottom: 0px;
   /* background-color: #f0f0f0; */
   /* box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);  */
@@ -634,13 +634,13 @@ h2 img {
   
   
   .about {
-    /* border: 3px solid rgb(255, 0, 208); */
+    /* border: 3px solid rgb(0, 255, 217); */
     width: 99%;
     float: left;
     height: 35rem;
     float: right;
     padding: 0px;
-    margin-top: -130px;
+    margin-top: -220px;
     margin-bottom: 0px;
     /* background-color: #f0f0f0; */
     /* box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);  */
@@ -735,8 +735,8 @@ h2 img {
     /* box-shadow: 0 0 20px 0 rgba(175, 0, 0, 0.989)5); */
   }
   .aboutme .home__subtitle{
-    margin-top: 20px;
-    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-bottom: 90px;
     /* border:5px solid red; */
   }
 }
