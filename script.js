@@ -131,4 +131,7 @@ const slider = document.querySelector('.slider');
 
 
     // Swiper JS
-     
+    const slidercontainer = document.querySelector('.slider-container');
+    document.querySelector('.slider').addEventListener('input', (e) => {
+      slidercontainer.style.setProperty('--position', `${e.target.value}%`);
+    })
