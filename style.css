@@ -107,22 +107,24 @@ body {
     background-color: #ffffff;
     width: 110%;
     /* Initially hide the navbar off-screen */
-    top: 40px;
-    /* border: 5px solid rgb(255, 196, 0); */
+    top: 0px;
+    border: 5px solid rgb(255, 196, 0);
     margin-left: -60px;
     margin-right: 20px;
-    height: 600px;
+    height: 700px;
     overflow: hidden;
+    z-index: 10;
 }
 
 .navbar-toggle {
   display: block;
-  position: absolute;
-  top: 10px;
-  right: 10px;
+  position: fixed;
+  top: 5px;
+  right: 5px;
   cursor: pointer;
   transition: 2s;
   /* border: 5px solid red; */
+  z-index: 300;
 }
  .bar{
   /* border: 5px solid green; */
@@ -1617,7 +1619,7 @@ img {
       .slider-para{
         /* border: 5px solid rgb(123, 0, 255); */
         height: 41rem;
-        width: 80%;
+        width: 97%;
         overflow: hidden;
         margin-left: -.5rem;
         /* margin: 0px; */
@@ -1641,10 +1643,10 @@ img {
        display: flex;
        margin: 0rem 0rem;
        width:100%;
-       /* padding: 1rem 2rem; */
+       padding: 1rem 2rem 1rem 1rem;
        box-sizing: border-box;
        float: left;
-       margin-left: -1px;
+       margin-left: 0px;
        color: hsl(0, 0%, 46%);
        text-align: justify;
     }
@@ -2634,6 +2636,9 @@ slider-main {
   border-radius: 1rem;
   --position: 50%;
   margin-top: -10rem;
+  margin-top: -20rem;
+  /* border: 5px solid rgb(119, 255, 0); */
+  margin: -50px 20px 40px 0px;
 
 }
 
@@ -2724,6 +2729,7 @@ slider-main {
     --position: 50%;
     margin-top: -20rem;
     /* border: 5px solid red; */
+    margin: -200px 20px 40px 0px;
   
   }
   
