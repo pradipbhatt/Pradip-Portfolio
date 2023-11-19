@@ -230,8 +230,13 @@ body {
   float: left;
   padding: 0rem;
   margin-top: 7rem;
-  
-
+ 
+}
+.side{
+  /* border: 5px solid green; */
+  height:500px;
+  margin-top: 90px;
+  width: 100%;
 }
 .sidebar a img{
   /* border: 3px solid rgb(0, 149, 255); */
@@ -258,9 +263,9 @@ body {
   width: 40%;
   float: left;
   height: auto;
-  margin-left: 8rem;
+  margin-left: 9rem;
   float: left;
-  margin-top: 70px;
+  margin-top: 200px;
   /* overflow: hidden; */
 }
 .sidebar1 h1{
@@ -283,12 +288,14 @@ body {
   margin-top: 10rem;
 }
 .sidebar2 img {
-  height: 300px;
-  width: 300px;
+  height: 320px;
+  width: 320px;
   border-radius: 1000px 1000px;
   box-shadow: 0px 0px 2px 3px #ddcfea;
   padding: 0px;
   /* border: 5px solid rgb(0, 68, 255); */
+  margin-top: -450px;
+  margin-left:539px;
 }
 .name {
   border: 3px solid rgb(208, 0, 255);
