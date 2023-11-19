@@ -100,37 +100,47 @@ body {
 
 @media screen and (min-width: 100px) and (max-width: 992px) {
   /* Your CSS rules for medium screens here */
+ 
   .navbar {
     display: none;
     flex-direction: column;
-    position: fixed;
+    /* position: fixed; */
     background-color: #ffffff;
-    width: 110%;
+    width: 100%;
     /* Initially hide the navbar off-screen */
-    top: 0px;
-    border: 5px solid rgb(255, 196, 0);
-    margin-left: -60px;
-    margin-right: 20px;
-    height: 700px;
+    bottom:10vh;
+    /* border: 5px solid rgb(255, 196, 0); */
+    height: 18rem;
     overflow: hidden;
     z-index: 10;
+    border-radius: 30px 30px 5px 5px;
+    box-shadow: 5px 0px 4px  black;
 }
 
 .navbar-toggle {
   display: block;
   position: fixed;
-  top: 5px;
-  right: 5px;
+  /* top: 38rem; */
+  right: 40%;
+  transform: translate(-50%,0);
   cursor: pointer;
-  transition: 2s;
   /* border: 5px solid red; */
   z-index: 300;
-}
- .bar{
-  /* border: 5px solid green; */
- width:30%;
+  bottom: 0px;
+  /* background-color: green; */
+
 }
 
+
+.header{
+  /* border:4px solid red; */
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  height: 5vh;
+  background:#ffffff;
+  z-index: 30;
+}
 .navbar a{
   border: 5px solid rgba(164, 156, 156, 0.001);
 
@@ -157,7 +167,7 @@ body {
 
   .navbar a {
     margin: 0;
-    padding: 15px 0;
+    padding: 10px 10;
     border-bottom: 1px solid rgba(37, 34, 34, 0.637);
   }
 
@@ -174,14 +184,17 @@ body {
 
   .bar {
     width: 30px;
-    height: 4px;
-    background-color: #2b050567;
+    height: 2px;
+    background-color: #380155d4;
     margin: 6px 0;
-    transition: 0.5s;
+    transition: 1s;
+    /* border: 4px solid red; */
   }
 
   .navbar-toggle.active .bar:nth-child(1) {
     transform: rotate(-45deg) translate(-5px, 6px);
+    /* border: 4px solid red; */
+    margin-right: 120px;
   }
 
   .navbar-toggle.active .bar:nth-child(2) {
@@ -190,6 +203,7 @@ body {
 
   .navbar-toggle.active .bar:nth-child(3) {
     transform: rotate(45deg) translate(-5px, -6px);
+    /* border: 4px solid red; */
   }
 }
 
@@ -404,16 +418,17 @@ h2 img {
     width: 100%;
     margin: 0rem;
     min-height: 25rem;
-    padding: 30px;
-    display: flex;
+    /* padding: 30px; */
+    /* display: flex; */
     background-color: #6000b900;
     /* border: 10px solid yellow; */
-    margin-left: 0rem;
+    margin-left:0rem;
     box-sizing: border-box;
     overflow: hidden;
+    padding-left: 0;
   }
   .sidebar {
-    width: 20%;
+   min-width: 20%;
     max-width: fit-content;
     float: left;
     margin-left: 0px;
@@ -421,9 +436,15 @@ h2 img {
     margin-top: -2.5rem;
     /* background-color: aqua; */
     height: 20rem;
+    /* border: 10px solid yellow; */
     
   }
-
+  .side{
+    /* border:3px solid red; */
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
   .sidebar a img {
     width: 1.7rem;
     height: 1.7rem;
@@ -435,10 +456,11 @@ h2 img {
 
   .sidebar2 img 
   {
-    height: 9rem;
-    width:26rem;
+    height: auto;
+    width:80%;
+    border-radius: 50%;
     align-items: center;
-    margin-left: 3rem;
+    margin-left: 2rem;
     margin-top: 0rem;
     margin-bottom: 0rem;
     /* border: 5px solid rgb(0, 68, 255); */
@@ -478,15 +500,12 @@ h2 img {
    }
    .sidebar1{
     /* border: 3px solid rgb(0, 255, 0); */
-    width:85%;
-    /* float: left; */
+    width:100%;
     height: 15rem;
     margin-right: 0rem;
-    margin-top:17rem;
+    margin-top:1rem;
     margin-left: .2rem;
-    /* border: 5px solid rgb(0, 68, 255); */
     box-sizing: border-box;
-    /* font-size: 10px; */
     overflow: hidden;
    }
 .sidebar1 h1{
@@ -513,13 +532,10 @@ h2 img {
    }
 
    .sidebar2 {
-    /* border: 3px solid rgb(9, 255, 0); */
-    width: 60%;
-    float: left;
+    /* border: 3px solid rgb(153, 255, 0); */
+    width: 100%;
     height: 10rem;
     margin-right: 0rem;
-    margin-top: -10rem;
-    margin-left: -15rem;
     /* border: 5px solid rgb(0, 68, 255); */
     box-sizing: border-box;
     font-size: 10px;
