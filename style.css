@@ -2088,7 +2088,7 @@ img {
 .vlog-left {
   /* fYnCWNi5 */
   /* background-color:#007bff ; */
-  width: 27%;
+  width: 30%;
   float: left;
   height: 27rem;
   margin-left: 0px;
@@ -2110,7 +2110,7 @@ img {
 }
 .vlog-right {
   /* background-color:#007bff ; */
-  width: 27%;
+  width: 30%;
   float: left;
   height: 27rem;
   margin-left: 0px;
@@ -3462,16 +3462,92 @@ slider-main {
    .about{
     /* border: 3px solid rgb(153, 255, 0); */
     width: 80%;
-    height: 33rem;
+    height: 40rem;
     /* border: 5px solid rgb(0, 68, 255); */
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     font-size: 10px;
     margin-top: -34rem;
+    margin-bottom: 100px;
     float: right;
+    overflow: hidden;
    }
    .about p{
     font-size: 22px;
     padding:3rem;
+   }
+.about h2{
+  /* border: 5px solid rgb(89, 255, 0); */
+  font-size: 20px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  margin-left: 3rem;
+  margin-top: -110px;
+}
+
+   /* My journey Section */
+   .about-journey{
+    /* border:5px solid red; */
+    overflow: hidden;
+    width: 90%;
+    margin: 30px 0px 0px 100px;
+   }
+   .about-projects{
+    /* border:5px solid red; */
+    overflow: hidden;
+    width: 95%;
+    margin: 0px 0px 0px 40px;
+   }
+   .about-vlog-image-form {
+    /* border:5px solid red; */
+    overflow: hidden;
+    width: 100%;
+    margin: 0px;
+   }
+   .about-vlog{
+    /* border:5px solid red; */
+    overflow: hidden;
+    width: 100%;
+    margin: 0px;
+   }
+   .footer-last{
+    width: 100%;
+    margin: 0px;
+    overflow: hidden;
+   }
+   slider-main{
+    /* border:5px solid rgb(179, 255, 0); */
+    /* height:100px; */
+    width:30rem;
+    margin-top:-30px;
+    padding: 0px;
+    background-color: rgba(240, 255, 255, 0);
+   }
+  
+   .slidecontainar{
+    /* border:5px solid red; */
+    /* height:200px; */
+    width:22rem;
+    margin-top:-300px;
+    padding: 0px;
+    background-color: rg
+   }
+   .about-img{
+    /* border:5px solid red; */
+    height:240px;
+    width:20rem;
+    margin-top:0px;
+    margin-left:25rem;
+    padding: 0px;
+    background-color: rgba(240, 255, 255, 0);
+   }
+   .contact__content{
+    /* border:5px solid red; */
+    /* height:200px; */
+    width:50rem;
+    margin-top:-300px;
+    padding: 0px;
+    background-color: rgba(240, 255, 255, 0);
    }
 }
