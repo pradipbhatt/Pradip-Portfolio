@@ -128,3 +128,44 @@ const slidercontainer = document.querySelector(".slider-container");
 document.querySelector(".slider").addEventListener("input", (e) => {
   slidercontainer.style.setProperty("--position", `${e.target.value}%`);
 });
+
+
+
+// JS for Preloader
+document.addEventListener("DOMContentLoaded", function () {
+  const content = document.getElementById("content");
+  const modeToggleBtn = document.getElementById("modeToggleBtn");
+
+  // Check the user's preferred mode
+  const prefersDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  setMode(prefersDarkMode);
+
+  // Toggle between dark and light mode
+  modeToggleBtn.addEventListener("click", function () {
+      const isDarkMode = document.body.classList.contains("dark-mode");
+      setMode(!isDarkMode);
+  });
+
+  function setMode(isDarkMode) {
+      document.body.classList.toggle("dark-mode", isDarkMode);
+
+      // Update button text based on the mode
+      const buttonText = isDarkMode ? "Light Mode" : "Dark Mode";
+      modeToggleBtn.textContent = buttonText;
+  }
+
+  // Determine if it's day or night based on the current time
+  function isDaytime() {
+      const now = new Date();
+      const hours = now.getHours();
+      return hours >= 6 && hours < 18; // Assume day if between 6 AM and 6 PM
+  }
+
+  // Set initial mode based on the time of day
+  setMode(isDaytime());
+
+  // Update the theme automatically based on the time of day
+  setInterval(function () {
+      setMode(isDaytime());
+  }, 1000 * 60 * 60); // Check every hour
+});
