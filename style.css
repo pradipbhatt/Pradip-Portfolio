@@ -1,10 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
 /* Common styles for all devices */
 body {
   font-family: 'Nunito', sans-serif;
@@ -447,7 +440,7 @@ span:hover {
   margin-top: 0.1rem;
 }
 .slidebar-button{
-  border: 2px solid rgb(1, 23, 1);
+  /* border: 2px solid rgb(1, 23, 1); */
   height: 2.5rem;
   font-size: 1.2rem;
   padding: .6rem ;
@@ -601,7 +594,7 @@ h2 img {
 
 
    .slidebar-button{
-    border: 2px solid rgb(1, 23, 1);
+    /* border: 2px solid rgb(1, 23, 1); */
     height: 2.5rem;
     font-size: 1.2rem;
     padding: .6rem ;
@@ -2221,7 +2214,7 @@ img {
           box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.2);
   width: 100%;
   height: 30px;
-  border:5px solid green;
+  /* border:5px solid green; */
   }
 
   .vlog-left a img{
@@ -2230,12 +2223,10 @@ img {
     font-weight: 700;
     color: #331450;
     /* box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.2); */
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 20px;
     /* border:5px solid green; */
-    margin-left: 3rem;
-    margin-top: -1.3rem;
-    margin: -24px 40px 0px 80px;
+    margin: -30px 40px 0px 95px;
   }
   .vlog-right {
     /* background-color:#007bff ; */
@@ -2271,16 +2262,14 @@ img {
   }
   .vlog-right a img{
     font-family: Amaranth, sans-serif;
-  font-size: 15px;
-  font-weight: 700;
-  color: #331450;
-  /* box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.2); */
-  width: 30px;
-  height: 30px;
-  /* border:5px solid green; */
-  margin-left: 3rem;
-  margin-top: -1.3rem;
-  margin: -24px 40px 0px 80px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #331450;
+    /* box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.2); */
+    width: 40px;
+    height: 20px;
+    /* border:5px solid green; */
+    margin: -30px 40px 0px 95px;
   }
   .about-vlog-image {
     /* border: 3px solid rgb(0, 255, 21); */
@@ -2408,6 +2397,7 @@ html {
   border-radius: 10px;
   padding: 20px;
   width: 100px;
+  filter: drop-shadow(4px 13px 12px #000000);
 }
 
 .contact__form-div {
@@ -2444,8 +2434,8 @@ html {
   padding-left: 30px;
   margin-top: 140px;
   margin-bottom: 0px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#f9f9f9), to(#8465c6));
   background: -o-linear-gradient(top, #f9f9f9, #8465c6);
+  background: -webkit-gradient(linear, left top, left bottom, from(#f9f9f9), to(#8465c6));
   background: linear-gradient(180deg, #f9f9f9, #8465c6);
   /* background-color: #ffffff; */
   /* box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);  */
@@ -2474,6 +2464,7 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+          filter: drop-shadow(-5px 53px 19px #0000009d);
 }
 
 .contact__form-tag {
@@ -2784,8 +2775,8 @@ html {
     padding-left: 30px;
     margin-top: 140px;
     margin-bottom: 0px;
-    background: -webkit-gradient(linear, left top, left bottom, from(#f9f9f9), to(#8465c6));
     background: -o-linear-gradient(top, #f9f9f9, #8465c6);
+    background: -webkit-gradient(linear, left top, left bottom, from(#f9f9f9), to(#8465c6));
     background: linear-gradient(180deg, #f9f9f9, #8465c6);
     /* background-color: #ffffff; */
     /* box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);  */
@@ -2811,6 +2802,7 @@ html {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+            filter: drop-shadow(-5px 53px 19px #0000009d);
   }
   
   .contact__form-tag {
@@ -3377,7 +3369,7 @@ slider-main {
 
 
    .slidebar-button{
-    border: 2px solid rgb(1, 23, 1);
+    /* border: 2px solid rgb(1, 23, 1); */
     height: 2.5rem;
     font-size: 1.2rem;
     padding: .6rem ;
@@ -3522,7 +3514,9 @@ slider-main {
    .slider-img{
     width: 40%;
     height:200px;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-left: 18rem;
    }
    .slider-para h2{
@@ -3595,6 +3589,7 @@ slider-main {
     margin-bottom: -4rem;
     padding: 0px;
     background-color: rgba(240, 255, 255, 0);
+    filter: drop-shadow(-5px 53px 19px #0000009d);
    }
    .contact__content{
     /* border:5px solid red; */
