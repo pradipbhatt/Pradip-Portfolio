@@ -3511,10 +3511,63 @@ slider-main {
     width: 100%;
     margin: 0px;
    }
+   .about-para{
+     /* border:5px solid red; */
+     overflow: hidden;
+     width: 90%;
+     margin: 0px;
+     font-size: 25px;
+     text-align: justify;
+   }
+   .slider-img{
+    width: 40%;
+    height:200px;
+    align-items: center;
+    margin-left: 18rem;
+   }
+   .slider-para h2{
+    /* border:5px solid red; */
+    font-size: 18px;
+    width: 18%;
+   } 
+   .section a h2{
+    /* border:5px solid red; */
+    font-size: 22px;
+    width: 90%;
+   }
+   #educationBtn  li{
+    /* border:5px solid red; */
+    font-size: 22px;
+    width: 90%;
+   }  
+    #experienceBtn  li{
+    /* border:5px solid red; */
+    font-size: 22px;
+    width: 90%;
+   }
+   #volunteeringBtn  li{
+    /* border:5px solid red; */
+    font-size: 22px;
+    width: 90%;
+   }
+   #awardBtn  li{
+    /* border:5px solid red; */
+    font-size: 22px;
+    width: 90%;
+   }
+
+
    .footer-last{
-    width: 100%;
+    /* min-width: 100%; */
     margin: 0px;
     overflow: hidden;
+    /* border:5px solid rgb(179, 255, 0); */
+   }
+   .about-vlog-image-form-last{
+    min-width: 100%;
+    margin: 0px;
+    overflow: hidden;
+    /* border:5px solid rgb(179, 255, 0); */
    }
    slider-main{
     /* border:5px solid rgb(179, 255, 0); */
@@ -3528,8 +3581,8 @@ slider-main {
    .slidecontainar{
     /* border:5px solid red; */
     /* height:200px; */
-    width:22rem;
-    margin-top:-300px;
+    width:23rem;
+    margin-top:-150px;
     padding: 0px;
     background-color: rg
    }
@@ -3539,6 +3592,7 @@ slider-main {
     width:20rem;
     margin-top:0px;
     margin-left:25rem;
+    margin-bottom: -4rem;
     padding: 0px;
     background-color: rgba(240, 255, 255, 0);
    }
