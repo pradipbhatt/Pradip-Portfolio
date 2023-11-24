@@ -96,9 +96,9 @@ body {
 
 
 
-/* Media queries */
+/* Media queries for navbar */
 
-@media screen and (min-width: 100px) and (max-width: 992px) {
+@media screen and (min-width: 100px) and (max-width: 770px) {
   /* Your CSS rules for medium screens here */
  
   .navbar {
@@ -394,7 +394,6 @@ h2 {
   height: 30px;
   /* border:5px solid green; */
 }
-
 h2:hover {
   font-family: Amaranth, sans-serif;
   font-size: 15px;
@@ -2823,4 +2822,135 @@ slider-main {
     /* z-index: 100; */
     box-shadow: 1px 1px 1px hsl(0, 50%, 2%, .5);
   }
+}
+
+
+@media screen and (min-width: 768px) and (max-width:1224px) {
+  .main {
+    width: 100%;
+    margin: 2rem;
+    min-height: 25rem;
+    /* padding: 30px; */
+    /* display: flex; */
+    background-color: #6000b900;
+    border: 10px solid rgb(85, 255, 0);
+    margin-left:0rem;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding-left: 0;
+  }
+  .sidebar {
+   min-width:5%;
+    max-width: fit-content;
+    float: left;
+    margin-left: 0px;
+    padding: 0px;
+    margin-top: -2.5rem;
+    /* background-color: aqua; */
+    height: 25rem;
+    border: 10px solid yellow;
+    
+  }
+  .side{
+    border:3px solid red;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .sidebar a img {
+    width: 1.7rem;
+    height: 1.7rem;
+    /* box-sizing: border-box; */
+    border: 1px solid rgb(0, 255, 98);
+    padding:5px;
+    /* margin-top: 20px; */
+  }
+
+  .sidebar2 img 
+  {
+    height: 220px;
+    width:220px;
+    border-radius: 50%;
+    align-items: center;
+    margin-left: 2rem;
+    margin-top: 5rem;
+    margin-bottom: 0rem;
+    /* border: 5px solid rgb(0, 68, 255); */
+
+  }
+
+  .name {
+    color: #8500dd;
+  }
+
+  span {
+    font-size: 2rem;
+  }
+
+
+   .slidebar-button{
+    border: 2px solid rgb(1, 23, 1);
+    height: 2.5rem;
+    font-size: 1.2rem;
+    padding: .6rem ;
+    font-weight: 500;
+    width: 10rem;
+    background-color: white;
+    margin-left: 0rem;
+    margin-top: 3.5rem;
+   }
+
+   .slidebar-button img{
+    /* border: 2px solid rgb(1, 23, 1); */
+    height: 2rem;
+    font-size: 1.2rem;
+    padding: .5rem .6rem 2rem .6rem;
+    font-weight: 500;
+    margin: 0rem 0rem 0rem 7rem;
+    margin-top: -1.9rem;
+    
+   }
+   .sidebar1{
+    /* border: 3px solid rgb(0, 255, 0); */
+    width:100%;
+    height: 15rem;
+    margin-right: 0rem;
+    margin-top:1rem;
+    margin-left: .2rem;
+    box-sizing: border-box;
+    overflow: hidden;
+   }
+.sidebar1 h1{
+  font-size: 2rem;
+  /* border: 4px solid red; */
+  height: 6rem;
+  font-weight: 550;
+  width: 250px;
+  text-align: left;
+}
+
+   .home__subtitle{
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding-left: 0rem;
+    /* position: relative; */
+    color: hsl(0, 0%, 46%);
+    font-size: 17px;
+    margin-top: 1rem;
+    margin-left: 0rem;
+    margin-bottom: 0rem;
+    /* border: 5px solid rgb(0, 255, 0); */
+    width: 100%;
+   }
+
+   .sidebar2 {
+    /* border: 3px solid rgb(153, 255, 0); */
+    width: 100%;
+    height: 20rem;
+    margin-right: 0rem;
+    /* border: 5px solid rgb(0, 68, 255); */
+    box-sizing: border-box;
+    font-size: 10px;
+    margin-top: -150px;
+   }
 }
