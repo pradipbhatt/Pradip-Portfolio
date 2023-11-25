@@ -1,11 +1,35 @@
-// JavaScript to handle the toggle functionality
 const navbarToggle = document.querySelector(".navbar-toggle");
 const navbar = document.querySelector(".navbar");
+const navLinks = document.querySelectorAll(".nav-link");
+
+let isScrolling;
 
 navbarToggle.addEventListener("click", () => {
-  navbar.classList.toggle("active");
-  navbarToggle.classList.toggle("active");
+    navbar.classList.toggle("active");
+    navbarToggle.classList.toggle("active");
 });
+
+// Close the navbar when a nav-link is clicked
+navLinks.forEach(link => {
+    link.addEventListener("click", () => {
+        if (navbar.classList.contains("active")) {
+            navbar.classList.remove("active");
+            navbarToggle.classList.remove("active");
+        }
+    });
+});
+
+// Handle scroll events
+window.addEventListener("scroll", () => {
+    navbar.classList.add("hidden");
+
+    clearTimeout(isScrolling);
+
+    isScrolling = setTimeout(() => {
+        navbar.classList.remove("hidden");
+    }, 200); // Adjust the timeout value as needed
+});
+
 
 
 // Get references to buttons and content divs
