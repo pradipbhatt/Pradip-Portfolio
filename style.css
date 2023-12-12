@@ -147,7 +147,7 @@ body {
 		width: 100%;
 		/* Initially hide the navbar off-screen */
 		bottom: 10vh;
-		border: 5px solid rgb(255, 196, 0);
+		/* border: 5px solid rgb(255, 196, 0); */
 		height: 23rem;
 		overflow: hidden;
 		z-index: 15;
@@ -170,6 +170,7 @@ body {
 		z-index: 300;
 		bottom: 0px;
 		/* background-color: green; */
+		height: 5vh;
 	}
 
 
@@ -178,11 +179,10 @@ body {
 		bottom: 0;
 		position: fixed;
 		width: 100%;
-		height: 5vh;
+		height: 5.5vh;
 		background: #ffffff;
 		z-index: 30;
 	}
-
 	.navbar a {
 		border: 5px solid rgba(164, 156, 156, 0.001);
 
@@ -233,7 +233,7 @@ body {
 
 	.bar {
 		width: 30px;
-		height: 2px;
+		height: 5px;
 		background-color: #380155d4;
 		margin: 6px 0;
 		-webkit-transition: .2s;
@@ -3882,6 +3882,7 @@ body.dark-mode {
 	color: #ffffff;
 	background-color: #47444c;
 	transition: 1s;
+	height: 5.5vh;
 }
 
 
@@ -3934,4 +3935,15 @@ body.dark-mode {
 	margin-left: 0px;
 	/* box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);  */
 	margin-top: -1.2rem;
+}
+.dark-mode.bar {
+	width: 30px;
+	height: 5px;
+	background-color: #e0dce3d4;
+	margin: 6px 0;
+	-webkit-transition: .2s;
+	-o-transition: .2s;
+	transition: .2s;
+	border: 4px solid red;
+
 }
