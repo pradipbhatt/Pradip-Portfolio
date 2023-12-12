@@ -147,12 +147,12 @@ body {
 		width: 100%;
 		/* Initially hide the navbar off-screen */
 		bottom: 10vh;
-		/* border: 5px solid rgb(255, 196, 0); */
-		height: 20rem;
+		border: 5px solid rgb(255, 196, 0);
+		height: 23rem;
 		overflow: hidden;
 		z-index: 15;
 		border-radius: 30px 60px 5px 5px;
-		-webkit-box-shadow: 5px 0px 4px black;
+		-webkit-box-shadow: 5px 0px 4px rgb(34, 28, 28);
 		box-shadow: 5px 0px 4px black;
 
 	}
@@ -462,6 +462,7 @@ span:hover {
 	font-size: 20px;
 	margin-top: 0.1rem;
 }
+
 
 .slidebar-button {
 	/* border: 2px solid rgb(1, 23, 1); */
